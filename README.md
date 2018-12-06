@@ -38,6 +38,7 @@ TO DO:
 
 TO DO:
 1. take a person's birthday as "YYYY-MM-DD" then returns the person's age
+**note: The day of the age change everyday because we use the datetime function. We test the module on Dec.5, but it will be FAIL rather than OK if you use the Agetest other days**
 
 
 #### B. The sub-package *`perinfo`* has a *`nanur`* module which has a *`name`* function for name numerology.
