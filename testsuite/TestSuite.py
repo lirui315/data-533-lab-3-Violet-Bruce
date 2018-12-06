@@ -4,7 +4,6 @@
 # In[2]:
 
 
-import testsuite.unittests.Agetest
 
 
 # In[4]:
@@ -13,6 +12,7 @@ import testsuite.unittests.Agetest
 import unittest
 import testsuite.unittests.TestBirthdateMonth as m
 import testsuite.unittests.TestBirthdateYear as y
+import testsuite.unittests.TestNumber as N
 import testsuite.unittests.Agetest as a
 import testsuite.unittests.Nametest as n
 
@@ -23,6 +23,7 @@ def my_suite():
     result = unittest.TestResult()
     suite.addTest(unittest.makeSuite(m.TestBirthdateMonth))
     suite.addTest(unittest.makeSuite(y.TestBirthdateYear))
+    suite.addTest(unittest.makeSuite(N.TestNumber))
     suite.addTest(unittest.makeSuite(a.TestAge))
     suite.addTest(unittest.makeSuite(n.TestName))
     runner = unittest.TextTestRunner()
